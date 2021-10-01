@@ -6,4 +6,4 @@ ENV PROJECT_NAME=""
 ENV APP_CENTER_TOKEN=""
 COPY entrypoint.sh /usr/bin/entrypoint.sh
 RUN chmod +x /usr/bin/entrypoint.sh
-CMD [ "appcenter-cli" ]
+ENTRYPOINT [ "/usr/bin/entrypoint.sh" ]
